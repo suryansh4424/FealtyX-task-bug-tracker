@@ -1,0 +1,21 @@
+/* TaskList.module.css */
+.taskList {
+    padding: 20px;
+  }
+  
+  .editFormContainer {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .taskList .taskItem {
+    margin-bottom: 15px;
+  }
+  
+  .taskList .taskItem:last-child {
+    margin-bottom: 0;
+  }
+  

@@ -1,0 +1,39 @@
+/* TimeTracker.module.css */
+.timeTracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .timeDisplay {
+    font-size: 1.2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .startButton,
+  .stopButton {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .startButton {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .stopButton {
+    background-color: #f44336;
+    color: white;
+  }
+  

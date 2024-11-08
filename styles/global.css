@@ -1,0 +1,23 @@
+/* global.css */
+
+/* Reset some default margins and paddings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles for body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Additional global styles if needed */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
+}
