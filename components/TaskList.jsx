@@ -3,26 +3,15 @@ import PropTypes from 'prop-types';
 
 const TaskList = ({ tasks, onDeleteTask, onUpdateTask }) => {
   const [expandedTask, setExpandedTask] = useState(null); 
-  const [statusDropdown, setStatusDropdown] = useState(null); 
-  const [editModeTask, setEditModeTask] = useState(null); 
+
   const [editedTaskDetails, setEditedTaskDetails] = useState({}); 
   const [showModal, setShowModal] = useState(false); 
-
-  const handleStatusChange = (taskId, newStatus) => {
-    onUpdateTask(taskId, { ...editedTaskDetails, status: newStatus });
-    setStatusDropdown(null); 
-  };
 
   const handleEditChange = (field, value) => {
     setEditedTaskDetails((prevDetails) => ({
       ...prevDetails,
       [field]: value,
     }));
-  };
-
-  const toggleStatusDropdown = (taskId, e) => {
-    e.stopPropagation(); 
-    setStatusDropdown(statusDropdown === taskId ? null : taskId); 
   };
 
   const handleEditClick = (taskId) => {
